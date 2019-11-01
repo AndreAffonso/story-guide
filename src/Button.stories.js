@@ -63,7 +63,7 @@ facebookButton.story = {
 
 export const disabledButton = () => (
   <div>
-    <Button disabled> Botão desabilitado</Button>
+    <Button disabled> Botão disabilitado</Button>
   </div>
 );
 
