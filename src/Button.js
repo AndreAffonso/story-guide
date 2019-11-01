@@ -18,6 +18,7 @@ const SIZES = {
 };
 
 const StyledButton = styled.button`
+  border: none;
   cursor: pointer;
   width: 326px;
   height: 56px;
@@ -48,7 +49,9 @@ const StyledButton = styled.button`
   }
 
   &:disabled{
-    background: #E8E8E8;
+    background: #E8E8E8;  
+    color: #737387;
+    cursor: not-allowed;
   }
 
   ${props =>
@@ -95,6 +98,7 @@ export function Button({
 }
 
 Button.propTypes = {
+  type: "primary",
   isLoading: PropTypes.bool,
   /**
    When a button is in the loading state you can supply custom text
